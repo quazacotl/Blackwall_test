@@ -1,0 +1,33 @@
+@import "fonts"
+@import "variables"
+
+
+*, *:before, *:after
+  box-sizing: border-box
+  font-family: "Inter", sans-serif
+  color: var(--main-text-color)
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video
+  margin: 0
+  padding: 0
+  border: 0
+a
+  text-decoration: none
+  color: inherit
+  &:hover
+    color: inherit
+
+.container
+  max-width: 1188px
+  margin: 0 auto
+
+.background-mobile
+  display: none
+
+@import 'components/header.sass'
+@import 'components/promo'
+@import 'components/rating'
+@import 'components/partners'
+@import 'components/features'
+
+@import 'media'
