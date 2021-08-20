@@ -1,47 +1,176 @@
-@media (max-width: 376px)
-  .container
-    max-width: 335px
+@media (max-width: 1200px)
+  .promo
+    padding: 0 20px
+    background-size: 60%
 
+  .rating, .features
+    margin-top: 60px
+
+@media (max-width: 992px)
   .header
     display: flex
     justify-content: space-between
-    max-width: 335px
+    &__menu
+      margin: 0 30px
+
+  .promo
+    &__header
+      max-width: 440px
+      font-size: 38px
+      line-height: 46px
+    &__text
+      max-width: 365px
+      font-size: 14px
+      line-height: 20px
+    &__btn
+      width: 160px
+      height: 54px
+
+  .rating
+    &__text
+      max-width: 350px
+      font-size: 26px
+      line-height: 44px
+    &__like
+      &_num
+        font-size: 45px
+        line-height: 50px
+      &_hearts
+        margin-top: 8px
+        &_item
+          width: 12px
+          height: 10px
+      &_text
+        font-size: 12px
+        line-height: 18px
+
+  .partners
+    img
+      &:nth-child(5), &:nth-child(6)
+        display: none
+
+  .features
+    &__header
+      font-size: 38px
+      line-height: 46px
+    &__subheader
+      font-size: 14px
+      line-height: 24px
+    &__wrapper
+      margin-top: 38px
+      column-gap: 40px
+    &__item
+      &_header
+        font-size: 20px
+        line-height: 24px
+      &_text
+        font-size: 14px
+      &_link
+        font-size: 16px
+        line-height: 18px
+
+
+@media (max-width: 768px)
+  .header
     &__menu, &__auth
       display: none
     &__mobile-menu
       display: flex
 
   .promo
-    background-image: none
     margin-top: 41px
     padding-top: 0
+    background-image: none
     &__header
       margin: 0 auto
-      max-width: 291px
+      max-width: 450px
       font-size: 28px
-      line-height: 27px
+      line-height: 36px
       text-align: center
     &__text
       margin: 20px auto 0
       display: block
-      max-width: 280px
+      max-width: 380px
       font-size: 14px
       line-height: 20px
       text-align: center
     &__btn
       display: block
       margin: 33px auto 0
-      width: 120px
-      height: 40px
-      font-size: 14px
-
-
   .background-mobile
     display: block
     width: 350px
     height: 300px
     background: url("../img/sub_bg.png") center center/cover no-repeat
     margin: 41px auto 0
+
+  .rating
+    &__text
+      max-width: 280px
+      font-size: 22px
+      line-height: 33px
+    &__like
+      margin-left: 35px
+      &_num
+        font-size: 35px
+        line-height: 40px
+      &_hearts
+        margin-top: 8px
+        &_item
+          width: 12px
+          height: 10px
+      &_text
+        font-size: 12px
+        line-height: 18px
+
+
+  .partners
+    margin-top: 34px
+    padding: 0 30px
+    img:nth-child(-n+4)
+      display: none
+    &__img
+      display: none
+      &_mob
+        display: block
+
+  .features
+    &__header
+      font-size: 28px
+      line-height: 36px
+    &__subheader
+      max-width: 480px
+      font-size: 14px
+      line-height: 20px
+    &__wrapper
+      margin-top: 40px
+      align-items: center
+      display: flex
+      flex-direction: column
+      row-gap: 48px
+    &__item
+      display: flex
+      flex-direction: column
+      max-width: 380px
+
+
+
+
+
+@media (max-width: 376px)
+  .container
+    max-width: 335px
+
+  .promo
+    &__header
+      max-width: 291px
+    &__text
+      max-width: 280px
+    &__btn
+      width: 120px
+      height: 40px
+      font-size: 14px
+
 
   .rating
     margin-top: 59px
@@ -74,11 +203,6 @@
 
   .partners
     margin-top: 22px
-    padding: 0
-    &__img
-      display: none
-      &_mob
-        display: block
 
   .features
     margin-top: 50px
